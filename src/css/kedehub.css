@@ -1,0 +1,96 @@
+.orghead {
+    padding-top: 16px;
+    padding-bottom: 0;
+    margin-bottom: 16px;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-secondary);
+    border-bottom: 1px solid var(--color-border-primary);
+}
+.color-border-active {
+    border-color:var(--color-primer-border-active) !important
+}
+.border-bottom-emphasis {
+    border-bottom:var(--primer-borderWidth-thin, 2px) solid var(--color-neutral-emphasis-plus) !important
+}
+
+.border-bottom-scale-blue-4 {
+    border-bottom:var(--primer-borderWidth-thin, 6px) solid var(--color-scale-blue-4) !important
+}
+.rounded-28 {
+    border-radius:var(--primer-borderRadius-large, 28px) !important
+}
+.color-fg-scale-yellow-2 {
+    color: var(--color-scale-yellow-2) !important;
+}
+.color-bg-scale-yellow-2 {
+    background-color: var(--color-scale-yellow-2) !important;
+}
+.color-bg-scale-yellow-3 {
+    background-color: var(--color-scale-yellow-3) !important;
+}
+.color-bg-scale-yellow-4 {
+    background-color: var(--color-scale-yellow-4) !important;
+}
+.color-bg-scale-blue-5 {
+    background-color: var(--color-scale-blue-5) !important;
+}
+.color-bg-scale-blue-7 {
+    background-color: var(--color-scale-blue-7) !important;
+}
+.color-bg-scale-blue-8 {
+    background-color: var(--color-scale-blue-8) !important;
+}
+/* Hamburger menu */
+.hamburger-menu {
+display: none;
+cursor: pointer;
+border: none;
+background: none;
+padding: 0;
+margin: 0;
+}
+
+.hamburger-menu-line {
+display: block;
+width: 24px;
+height: 2px;
+background-color: #333;
+margin: 5px 0;
+}
+
+/* Main menu styles */
+.mobile-menu {
+display: flex;
+justify-content: space-around;
+}
+
+.mobile-menu.open {
+display: block;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 767px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .mobile-menu.open {
+        display: block;
+    }
+}
+.hamburger-menu-line.close-icon:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger-menu-line.close-icon:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu-line.close-icon:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
